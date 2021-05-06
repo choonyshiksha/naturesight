@@ -1,0 +1,464 @@
+.container
+{
+   
+    display:grid;
+    height: 100vh;/*Response*/
+    grid-template-columns: 1fr 1fr 1fr;/*Three columns*/
+    grid-template-rows: 1fr 1fr 1fr  2fr 2fr 2fr 2fr 0.5fr  1fr 1fr;
+    grid-template-areas: 
+    "logo logo logo"
+    "nav nav nav"
+    "Main Main Main"
+    "Menu1 Menu1 Menu1"
+    "Intro Intro1 Intro2"
+    "Image Section Section "
+    "Portfolio Portfolio Portfolio"
+    "Gallery Gallery1 Gallery2"
+    "ContactFormDetails ContactForm ContactForm1"
+    "Footer Footer Footer"
+    ;
+    grid-gap: 0.2em;
+
+   }
+
+
+
+.logo
+{
+    /*background-color: aqua;*/
+    grid-area: logo;
+    display: block;
+    text-align:left;/*left logo*/
+    
+}
+
+.nav
+{
+    background-color: aquamarine;
+    grid-area: nav;
+
+}
+
+.Main
+{
+    background-color: white;
+    grid-area: Main;
+    /*background-image: url(/images/resto.jpg);*/
+   
+}
+
+.Main-image
+{
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(12, 114, 51);
+
+}
+.nav li{
+    float: left;
+}
+
+.nav li a 
+{
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover
+{
+     background-color: rgb(11, 80, 38);
+}
+.sideMenu
+{
+    /*background-color: blue;*/
+
+    grid-area: sideMenu;/*reference the layout*/
+    list-style: none;
+   
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+.sideMenu1
+{
+    list-style: none;
+    border: 1px #ddd solid;
+    border-radius: 10px;
+    width: 40%;
+    padding: 20px;
+    
+}
+.sideMenu1 li
+{
+    font-size: 20px;
+    line-height: 3.0em;/*spread appart*/
+    border-bottom: dotted 1px #ddd ;
+    text-align:left;
+       
+
+}
+.sideMenu1 li  a
+{   
+    color: yellowgreen;/*#333;*/
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    line-height: 65px;
+    font-size:20px ;
+    color: black;
+    padding-left: 40px;
+    box-sizing: border-box;
+
+}
+.sideMenu li a:hover
+{   
+    color: grey;
+
+}
+.Menu1
+{
+    grid-area: Menu1; 
+    background-color:whitesmoke;
+}
+.Menu1 h3{
+    color: black;
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center;
+}
+
+.Intro
+{
+    background-color:whitesmoke;
+    grid-area: Intro;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+.IntroEat
+{
+    width: 80%;
+    height: 120px;
+    object-fit: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.Intro h3
+{
+     color: black;
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+}
+.Intro1
+{
+   /* background-color: rgb(233, 232, 238);*/
+    grid-area: Intro1;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+.Intro1 h3
+{
+    color: black;
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+}
+.Intro2
+{
+    background-color: rgba(248, 241, 241, 0.986);
+    grid-area: Intro2;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+}
+.Intro2 h3
+{
+    color: black;
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+}
+
+.Image
+{
+    background-color:darkblue;
+    grid-area: Image;
+}
+.Image-size
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Section
+{
+    background-color:rgb(248, 248, 246);
+    grid-area: Section;
+    background-image: url(/images/jackeventresize.jpg);
+    background-repeat: no-repeat;
+}
+.Section p cite
+{
+   color: whitesmoke;
+  
+}
+.Portfolio
+{
+    /*background-color: darkorange;*/
+    grid-area: Portfolio;
+    height: 50%;
+}
+.Portfolio h3
+{
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center;
+}
+.Gallery
+{
+    background-color: rgb(247, 239, 243);
+    grid-area: Gallery;
+}
+.Gallery1
+{
+    background-color:rgba(248, 242, 243, 0.945);
+    grid-area: Gallery1;
+}
+.Gallery2
+{
+   
+    grid-area: Gallery2;
+    width: 100%;
+}
+.GalleryImage
+{
+    width: 90%;
+    height: 50%;
+
+}
+.Contact
+{
+
+    grid-area: Contact;
+}
+.Contact h3
+{
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center; 
+}
+.Address  
+{
+    background-color:whitesmoke;
+    grid-area: Address;
+    height: 55vh;
+    width: 90%;
+}
+
+.ContactFormDetails
+{
+    background-color:#F2F3F4;    /*background-image: url(/images/salad.jpg);*/
+    grid-area: ContactFormDetails;
+    color: #fff;
+    line-height: 1.8;
+    box-sizing: border-box;
+    
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.ContactForm
+{
+    background-color:#F2F3F4;
+        /*background-image: url(/images/salad.jpg);*/
+    grid-area: ContactForm;
+    color: #fff;
+    line-height: 1.8;
+    box-sizing: border-box;
+    
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.ContactForm1
+{
+    background-color:black;
+    background-image:url(/images/visitingcard_resize2.jpg);
+    object-fit: cover;
+    
+    grid-area: ContactForm1;
+    color: #fff;
+    line-height: 1.8;
+    box-sizing: border-box;
+    
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.Address h2
+{
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center;
+}
+.Address h3 
+{
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center;
+}
+
+.container-form
+{
+    margin: 40px auto;
+    max-width: 400px;
+    padding: 20px;
+    
+}
+
+.container-form h3
+{
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center;
+    
+}
+.ContactDetails-form
+{
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 20px;
+    
+}
+.ContactDetails-form h3 
+{
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center; 
+    color:black;
+}
+
+.ContactDetails-form h2
+{
+    font-family: 'Roboto', sans-serif;/*Google font online*/
+    text-align: center;   
+    color:black;
+}
+
+
+.form-wrap /**area around the contact form*/
+{
+    background: #fff;
+    padding: 15px 25px;
+    color: #333; 
+    justify-self: left;
+    /*aten 5 min mo try la*/
+
+}
+.form-wrap h1
+{
+   text-align: center;
+    
+}
+.form-wrap .form-group /*Distance between each element*/
+{
+    margin-top: 15px;
+}
+
+.form-wrap .form-group label
+{
+    display: block;
+    
+    color: #666;
+}
+.form-wrap .form-group input
+{
+    width: 100% ;
+    padding: 10px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+}
+.form-wrap button
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #49c1a2;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;/*check cursor*/
+}
+.form-wrap button:hover
+{
+    background: #37a08e ;
+
+}
+
+.Footer
+{
+    /*background-color:limegreen;*/
+    grid-area: Footer;
+}
+
+.social
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.social a
+{
+    height: 50px;
+    width: 50px;
+    background-color: #f5f6fa;
+    border-radius: 35px;
+    text-align: center;
+    margin:10px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    line-height: 70px
+
+}
+
+.social a i
+{
+    transition:  all 0.3s linear;
+}
+.social a:hover i 
+{
+    transform: :scale(1.4);
+}
+@media only screen and (max-width:550px) /*responsive layout for css mobile based on the 550px*/
+{
+    .container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.5fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "Main"
+        "Intro"
+        "Intro1"
+        "Intro2"
+        "Image"
+        "Section"
+        "Portfolio"
+        "Gallery"
+        "Gallery1"
+        "Gallery2"
+        "Contact"
+        "Address"
+        "ContactFormDetails"
+         "ContactForm"
+         "ContactForm1"
+        "Footer"
+        ;
+    }
+}
