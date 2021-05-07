@@ -53,6 +53,11 @@
     height: 390px;
     object-fit: cover;
 }
+.imgIcon
+{
+    width: 100px;
+    height: 100px;
+}
 
 .nav ul{
     list-style-type: none;
@@ -184,7 +189,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
 }
-}
+
 .Intro2 h3
 {
     color: black;
@@ -432,9 +437,9 @@
 }
 .social a:hover i 
 {
-    transform: :scale(1.4);
+    transform: scale(1.4);
 }
-@media only screen and (max-width:550px) /*responsive layout for css mobile based on the 550px*/
+@media only screen and (max-width:375px) /*responsive layout for css mobile based on the 550px*/
 {
     .container
     {
@@ -462,3 +467,62 @@
         ;
     }
 }
+
+@media only screen and (min-device-width : 768px)  {
+    .container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.5fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "Main"
+        "Intro"
+        "Intro1"
+        "Intro2"
+        "Image"
+        "Section"
+        "Portfolio"
+        "Gallery"
+        "Gallery1"
+        "Gallery2"
+        "Contact"
+        "Address"
+        "ContactFormDetails"
+         "ContactForm"
+         "ContactForm1"
+        "Footer"
+        ;
+    }
+    /* Styles */
+    }
+
+    @media only screen and (min-device-width : 1200px)  {
+        .container
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.5fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "Main"
+        "Intro"
+        "Intro1"
+        "Intro2"
+        "Image"
+        "Section"
+        "Portfolio"
+        "Gallery"
+        "Gallery1"
+        "Gallery2"
+        "Contact"
+        "Address"
+        "ContactFormDetails"
+         "ContactForm"
+         "ContactForm1"
+        "Footer"
+        ;
+    }
+
+        
+        }
